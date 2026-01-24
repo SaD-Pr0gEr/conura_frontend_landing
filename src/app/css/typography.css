@@ -1,0 +1,300 @@
+/**
+ * Typography — Conura Design System
+ * Стили типографики для Desktop и Mobile
+ */
+
+/* ========================================
+   DESKTOP TYPOGRAPHY
+   ======================================== */
+
+/* Headlines */
+.desktop-h1 {
+  font-family: var(--font-primary);
+  font-size: var(--desktop-h1-size);
+  font-weight: var(--desktop-h1-weight);
+  line-height: var(--desktop-h1-line);
+  letter-spacing: 0;
+  color: var(--color-black-100);
+}
+
+.desktop-h2 {
+  font-family: var(--font-primary);
+  font-size: var(--desktop-h2-size);
+  font-weight: var(--desktop-h2-weight);
+  line-height: var(--desktop-h2-line);
+  letter-spacing: 0;
+  color: var(--color-black-100);
+}
+
+.desktop-h3 {
+  font-family: var(--font-primary);
+  font-size: var(--desktop-h3-size);
+  font-weight: var(--desktop-h3-weight);
+  line-height: var(--desktop-h3-line);
+  letter-spacing: 0;
+  color: var(--color-black-100);
+}
+
+.desktop-h4 {
+  font-family: var(--font-primary);
+  font-size: var(--desktop-h4-size);
+  font-weight: var(--desktop-h4-weight);
+  line-height: var(--desktop-h4-line);
+  letter-spacing: 0;
+  color: var(--color-black-100);
+}
+
+.desktop-h5 {
+  font-family: var(--font-primary);
+  font-size: var(--desktop-h5-size);
+  font-weight: var(--desktop-h5-weight);
+  line-height: var(--desktop-h5-line);
+  letter-spacing: 0;
+  color: var(--color-black-100);
+}
+
+.desktop-banner {
+  font-family: var(--font-primary);
+  font-size: var(--desktop-banner-size);
+  font-weight: var(--desktop-banner-weight);
+  line-height: var(--desktop-banner-line);
+  letter-spacing: 0;
+  color: var(--color-black-100);
+}
+
+/* Subtitles */
+.desktop-subtitle-24-sb {
+  font-family: var(--font-primary);
+  font-size: var(--desktop-subtitle-24-size);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--desktop-subtitle-24-line);
+  letter-spacing: 0;
+  color: var(--color-black-100);
+}
+
+.desktop-subtitle-24-md {
+  font-family: var(--font-primary);
+  font-size: var(--desktop-subtitle-24-size);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--desktop-subtitle-24-line);
+  letter-spacing: 0;
+  color: var(--color-black-100);
+}
+
+.desktop-subtitle-20 {
+  font-family: var(--font-primary);
+  font-size: var(--desktop-subtitle-20-size);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--desktop-subtitle-20-line);
+  letter-spacing: 0;
+  color: var(--color-black-100);
+}
+
+/* Body */
+.desktop-body-18 {
+  font-family: var(--font-primary);
+  font-size: var(--desktop-body-18-size);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--desktop-body-18-line);
+  letter-spacing: 0;
+  color: var(--color-black-100);
+}
+
+.desktop-body-16 {
+  font-family: var(--font-primary);
+  font-size: var(--desktop-body-16-size);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--desktop-body-16-line);
+  letter-spacing: 0;
+  color: var(--color-black-100);
+}
+
+/* Button */
+.desktop-button {
+  font-family: var(--font-primary);
+  font-size: var(--desktop-button-size);
+  font-weight: var(--desktop-button-weight);
+  line-height: var(--desktop-button-line);
+  letter-spacing: 0;
+}
+
+/* Small */
+.desktop-small-12 {
+  font-family: var(--font-secondary);
+  font-size: var(--desktop-small-12-size);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--desktop-small-12-line);
+  letter-spacing: var(--desktop-small-12-spacing);
+}
+
+/* ========================================
+   MOBILE TYPOGRAPHY
+   ======================================== */
+
+/* Headlines */
+.mobile-h1 {
+  font-family: var(--font-primary);
+  font-size: var(--mobile-h1-size);
+  font-weight: var(--mobile-h1-weight);
+  line-height: var(--mobile-h1-line);
+  letter-spacing: 0;
+  color: var(--color-black-100);
+}
+
+.mobile-h2 {
+  font-family: var(--font-primary);
+  font-size: var(--mobile-h2-size);
+  font-weight: var(--mobile-h2-weight);
+  line-height: var(--mobile-h2-line);
+  letter-spacing: 0;
+  color: var(--color-black-100);
+}
+
+.mobile-h3 {
+  font-family: var(--font-primary);
+  font-size: var(--mobile-h3-size);
+  font-weight: var(--mobile-h3-weight);
+  line-height: var(--mobile-h3-line);
+  letter-spacing: 0;
+  color: var(--color-black-100);
+}
+
+/* Subtitles */
+.mobile-subtitle-20-sb {
+  font-family: var(--font-primary);
+  font-size: var(--mobile-subtitle-20-size);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--mobile-subtitle-20-line);
+  letter-spacing: 0;
+  color: var(--color-black-100);
+}
+
+.mobile-subtitle-20-md {
+  font-family: var(--font-primary);
+  font-size: var(--mobile-subtitle-20-size);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--mobile-subtitle-20-line);
+  letter-spacing: 0;
+  color: var(--color-black-100);
+}
+
+.mobile-subtitle-18 {
+  font-family: var(--font-primary);
+  font-size: var(--mobile-subtitle-18-size);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--mobile-subtitle-18-line);
+  letter-spacing: 0;
+  color: var(--color-black-100);
+}
+
+/* Body */
+.mobile-body-15 {
+  font-family: var(--font-primary);
+  font-size: var(--mobile-body-15-size);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--mobile-body-15-line);
+  letter-spacing: 0;
+  color: var(--color-black-100);
+}
+
+.mobile-body-14-md {
+  font-family: var(--font-primary);
+  font-size: var(--mobile-body-14-size);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--mobile-body-14-line);
+  letter-spacing: 0;
+  color: var(--color-black-100);
+}
+
+.mobile-body-14 {
+  font-family: var(--font-primary);
+  font-size: var(--mobile-body-14-size);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--mobile-body-14-line);
+  letter-spacing: 0;
+  color: var(--color-black-100);
+}
+
+.mobile-body-13-md {
+  font-family: var(--font-primary);
+  font-size: var(--mobile-body-13-size);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--mobile-body-13-line);
+  letter-spacing: 0;
+  color: var(--color-black-100);
+}
+
+.mobile-body-13 {
+  font-family: var(--font-primary);
+  font-size: var(--mobile-body-13-size);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--mobile-body-13-line);
+  letter-spacing: 0;
+  color: var(--color-black-100);
+}
+
+/* ========================================
+   RESPONSIVE TYPOGRAPHY
+   Автоматическое переключение Desktop/Mobile
+   ======================================== */
+
+/* Base - Mobile first */
+h1, .h1 {
+  font-family: var(--font-primary);
+  font-size: var(--mobile-h1-size);
+  font-weight: var(--mobile-h1-weight);
+  line-height: var(--mobile-h1-line);
+  letter-spacing: 0;
+  color: var(--color-black-100);
+}
+
+h2, .h2 {
+  font-family: var(--font-primary);
+  font-size: var(--mobile-h2-size);
+  font-weight: var(--mobile-h2-weight);
+  line-height: var(--mobile-h2-line);
+  letter-spacing: 0;
+  color: var(--color-black-100);
+}
+
+h3, .h3 {
+  font-family: var(--font-primary);
+  font-size: var(--mobile-h3-size);
+  font-weight: var(--mobile-h3-weight);
+  line-height: var(--mobile-h3-line);
+  letter-spacing: 0;
+  color: var(--color-black-100);
+}
+
+/* Desktop overrides */
+@media (min-width: 1024px) {
+  h1, .h1 {
+    font-size: var(--desktop-h1-size);
+    font-weight: var(--desktop-h1-weight);
+    line-height: var(--desktop-h1-line);
+  }
+  
+  h2, .h2 {
+    font-size: var(--desktop-h2-size);
+    font-weight: var(--desktop-h2-weight);
+    line-height: var(--desktop-h2-line);
+  }
+  
+  h3, .h3 {
+    font-size: var(--desktop-h3-size);
+    font-weight: var(--desktop-h3-weight);
+    line-height: var(--desktop-h3-line);
+  }
+}
+
+/* ========================================
+   TEXT COLORS
+   ======================================== */
+
+.text-black { color: var(--color-black-100); }
+.text-black-80 { color: var(--color-black-80); }
+.text-black-60 { color: var(--color-black-60); }
+.text-black-40 { color: var(--color-black-40); }
+.text-white { color: var(--color-white); }
+.text-accent { color: var(--color-accent-sea); }
+.text-error { color: var(--color-system-red); }

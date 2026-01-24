@@ -1,0 +1,198 @@
+/**
+ * CSS Variables — Conura Design System
+ * Извлечено из Figma макета
+ */
+
+:root {
+  /* ========================================
+     COLORS
+     ======================================== */
+  
+  /* Black */
+  --color-black-100: #101010;
+  --color-black-80: #3F3F3F;
+  --color-black-60: #787878;
+  --color-black-40: #9F9F9F;
+  
+  /* Light */
+  --color-white: #FFFFFF;
+  --color-light-stroke: #E9E9E9;
+  --color-light-gray: #EEF0F2;
+  --color-light-bg: #FBFBFB;
+  
+  /* Accent */
+  --color-accent-sea: #04A8BF;
+  --color-accent-blue: #3597E6;
+  --color-accent-purple: #5D6BFF;
+  --color-accent-orange: #FF6A3D;
+  --color-accent-pink: #FF2050;
+  
+  /* System */
+  --color-system-red: #F85353;
+  
+  /* Status */
+  --color-status-grey: #6E798E;
+  --color-status-grey-light: #E6ECF0;
+  
+  /* Grey */
+  --color-grey-dark: #A6A9B0;
+  
+  /* Additional */
+  --color-primary-bg: #FAFAFA;
+  --color-bg-gray: #FAFBFB;
+  --color-stroke-light: #F1F1F1;
+  --color-stroke-light-alt: #F5F5F5;
+  
+  /* Overlay */
+  --color-overlay: rgba(0, 0, 0, 0.3);
+  
+  /* ========================================
+     FONTS
+     ======================================== */
+  
+  --font-primary: 'Inter Tight', sans-serif;
+  --font-secondary: 'Inter', sans-serif;
+  
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  
+  /* ========================================
+     TYPOGRAPHY — DESKTOP
+     ======================================== */
+  
+  /* Headline */
+  --desktop-h1-size: 60px;
+  --desktop-h1-line: 65px;
+  --desktop-h1-weight: 600;
+  
+  --desktop-h2-size: 55px;
+  --desktop-h2-line: 60px;
+  --desktop-h2-weight: 600;
+  
+  --desktop-h3-size: 50px;
+  --desktop-h3-line: 55px;
+  --desktop-h3-weight: 600;
+  
+  --desktop-h4-size: 32px;
+  --desktop-h4-line: 39px;
+  --desktop-h4-weight: 600;
+  
+  --desktop-h5-size: 28px;
+  --desktop-h5-line: 34px;
+  --desktop-h5-weight: 600;
+  
+  --desktop-banner-size: 50px;
+  --desktop-banner-line: 60px;
+  --desktop-banner-weight: 700;
+  
+  /* Subtitle */
+  --desktop-subtitle-24-size: 24px;
+  --desktop-subtitle-24-line: 29px;
+  
+  --desktop-subtitle-20-size: 20px;
+  --desktop-subtitle-20-line: 24px;
+  
+  /* Body */
+  --desktop-body-18-size: 18px;
+  --desktop-body-18-line: 22px;
+  
+  --desktop-body-16-size: 16px;
+  --desktop-body-16-line: 19px;
+  
+  /* Button */
+  --desktop-button-size: 15px;
+  --desktop-button-line: 18px;
+  --desktop-button-weight: 700;
+  
+  /* Small */
+  --desktop-small-12-size: 12px;
+  --desktop-small-12-line: 15px;
+  --desktop-small-12-spacing: -0.24px;
+  
+  /* ========================================
+     TYPOGRAPHY — MOBILE
+     ======================================== */
+  
+  /* Headline */
+  --mobile-h1-size: 34px;
+  --mobile-h1-line: 37px;
+  --mobile-h1-weight: 600;
+  
+  --mobile-h2-size: 28px;
+  --mobile-h2-line: 34px;
+  --mobile-h2-weight: 700;
+  
+  --mobile-h3-size: 22px;
+  --mobile-h3-line: 27px;
+  --mobile-h3-weight: 600;
+  
+  /* Subtitle */
+  --mobile-subtitle-20-size: 20px;
+  --mobile-subtitle-20-line: 24px;
+  
+  --mobile-subtitle-18-size: 18px;
+  --mobile-subtitle-18-line: 22px;
+  
+  /* Body */
+  --mobile-body-15-size: 15px;
+  --mobile-body-15-line: 18px;
+  
+  --mobile-body-14-size: 14px;
+  --mobile-body-14-line: 17px;
+  
+  --mobile-body-13-size: 13px;
+  --mobile-body-13-line: 16px;
+  
+  /* ========================================
+     BORDER RADIUS
+     ======================================== */
+  
+  --radius-xs: 4px;
+  --radius-sm: 5px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-xl: 15px;
+  --radius-2xl: 20px;
+  --radius-3xl: 24px;
+  --radius-4xl: 28px;
+  --radius-5xl: 30px;
+  --radius-round: 100px;
+  
+  /* ========================================
+     SHADOWS
+     ======================================== */
+  
+  --shadow-dropdown: 0px 4px 15px rgba(20, 25, 32, 0.2);
+  
+  /* ========================================
+     SPACING
+     ======================================== */
+  
+  /* Container */
+  --container-desktop-padding: 140px;
+  --container-mobile-padding: 16px;
+  --container-desktop-width: 1320px;
+  --container-mobile-width: 328px;
+  
+  /* ========================================
+     BREAKPOINTS (for reference)
+     ======================================== */
+  
+  /* 
+   * Mobile: 0 - 767px
+   * Tablet: 768px - 1023px
+   * Desktop: 1024px+
+   */
+  
+  /* ========================================
+     TRANSITIONS
+     ======================================== */
+  
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 350ms ease;
+}

@@ -1,0 +1,10 @@
+<svg width="100" height="65" viewBox="0 0 100 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Placeholder logo - replace with actual export from Figma -->
+  <text x="0" y="40" font-family="Inter Tight" font-size="20" font-weight="600" fill="#101010">Conura</text>
+  <!-- Circles decoration -->
+  <circle cx="75" cy="25" r="15" stroke="#101010" stroke-width="1.5" fill="none"/>
+  <circle cx="85" cy="35" r="10" stroke="#04A8BF" stroke-width="1.5" fill="none"/>
+  <circle cx="70" cy="40" r="8" stroke="#FF6A3D" stroke-width="1.5" fill="none"/>
+  <circle cx="78" cy="22" r="3" fill="#04A8BF"/>
+  <circle cx="72" cy="45" r="2" fill="#FF2050"/>
+</svg>

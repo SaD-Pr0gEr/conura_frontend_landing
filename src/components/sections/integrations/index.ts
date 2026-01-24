@@ -1,0 +1,10 @@
+export { IntegrationsBannerSection } from './IntegrationsBannerSection';
+export { IntegrationsWhatSection } from './IntegrationsWhatSection';
+export { IntegrationsServicesSection } from './IntegrationsServicesSection';
+export { IntegrationsTypesSection } from './IntegrationsTypesSection';
+export { IntegrationsScenariosSection } from './IntegrationsScenariosSection';
+export { IntegrationsDataflowSection } from './IntegrationsDataflowSection';
+export { IntegrationsTechSection } from './IntegrationsTechSection';
+export { IntegrationsSystemsSection } from './IntegrationsSystemsSection';
+export { IntegrationsHowWeWorkSection } from './IntegrationsHowWeWorkSection';
+export { IntegrationsSecuritySection } from './IntegrationsSecuritySection';
