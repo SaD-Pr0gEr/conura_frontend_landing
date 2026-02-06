@@ -1,0 +1,29 @@
+/**
+ * Component Styles Index
+ * Auto-generated - imports all component CSS files
+ */
+
+/* Base */
+@import './components/base.css';
+
+/* Components */
+@import './components/header.css';
+@import './components/mobile-menu.css';
+@import './components/banner.css';
+@import './components/certificate.css';
+@import './components/services.css';
+@import './components/modal.css';
+@import './components/how-we-work.css';
+@import './components/cases.css';
+@import './components/cta.css';
+@import './components/blog.css';
+@import './components/footer.css';
+@import './components/statistics.css';
+@import './components/running-line.css';
+
+/* Pages */
+@import './pages/context.css';
+@import './pages/bots.css';
+@import './pages/sites.css';
+@import './pages/target.css';
+@import './pages/integrations.css';

@@ -1,0 +1,330 @@
+/**
+ * Services Styles
+ * Auto-generated from styles.css
+ */
+
+/* ========================================
+   SERVICES SECTION (Accordion)
+   ======================================== */
+
+.services-section {
+  padding: 40px var(--container-mobile-padding);
+}
+
+@media (min-width: 1024px) {
+  .services-section {
+    padding: 60px var(--container-desktop-padding);
+  }
+}
+
+.services-title {
+  font-family: var(--font-primary);
+  font-size: 34px;
+  font-weight: var(--font-weight-semibold);
+  line-height: 37px;
+  color: var(--color-black-100);
+  margin: 0 0 30px;
+}
+
+@media (min-width: 1024px) {
+  .services-title {
+    font-size: 55px;
+    line-height: 60px;
+    margin: 0 0 35px;
+  }
+}
+
+/* Services Content Container */
+.services-content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .services-content {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+/* Services Tabs (Mobile: Accordion, Desktop: Tab list) */
+.services-tabs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .services-tabs {
+    width: 418px;
+    flex-shrink: 0;
+  }
+}
+
+/* Individual Service Tab */
+.service-tab {
+  border-top: 1px solid var(--color-light-stroke);
+  border-bottom: 1px solid var(--color-light-stroke);
+  margin-top: -1px; /* Collapse borders */
+  transition: border-color 0.3s ease;
+}
+
+.service-tab:first-child {
+  margin-top: 0;
+}
+
+/* Tab Header */
+.service-tab-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 25px 0;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .service-tab-header {
+    gap: 20px;
+    padding: 24px 0;
+  }
+}
+
+/* Tab Icon */
+.service-tab-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: var(--color-light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+  transition: background-color var(--transition-fast);
+}
+
+.service-tab-icon img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  opacity: 0.3;
+  filter: invert(1) brightness(0); /* Make white icon to black for visibility on gray bg */
+  transition: opacity var(--transition-fast), filter var(--transition-fast);
+}
+
+.service-tab.active .service-tab-icon {
+  background-color: var(--color-black-100);
+}
+
+.service-tab.active .service-tab-icon img {
+  opacity: 1;
+  filter: none; /* Reset filter - show white icon on black background */
+}
+
+/* Tab Name */
+.service-tab-name {
+  font-family: var(--font-primary);
+  font-size: 20px;
+  font-weight: var(--font-weight-medium);
+  line-height: normal;
+  color: var(--color-black-100);
+  flex: 1;
+  transition: color var(--transition-fast);
+}
+
+@media (min-width: 1024px) {
+  .service-tab-name {
+    font-size: 24px;
+    color: var(--color-black-60);
+  }
+}
+
+.service-tab.active .service-tab-name {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-black-100);
+}
+
+/* Tab Toggle Button (Mobile only) */
+.service-tab-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-black-100);
+  padding: 0;
+}
+
+@media (min-width: 1024px) {
+  .service-tab-toggle {
+    display: none;
+  }
+}
+
+.service-tab-toggle .icon-close {
+  display: none;
+}
+
+.service-tab-toggle .icon-plus {
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.service-tab.active .service-tab-toggle .icon-close {
+  display: block;
+}
+
+.service-tab.active .service-tab-toggle .icon-plus {
+  display: none;
+}
+
+/* Rotate plus icon on hover */
+.service-tab:not(.active) .service-tab-toggle:hover .icon-plus {
+  transform: rotate(90deg);
+}
+
+/* Tab Content (Mobile: Expandable, Desktop: Hidden) */
+.service-tab-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 0;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease, padding-bottom 0.3s ease;
+}
+
+.service-tab.active .service-tab-content {
+  max-height: 800px; /* Large enough to fit content */
+  opacity: 1;
+  padding-bottom: 25px;
+}
+
+@media (min-width: 1024px) {
+  .service-tab-content {
+    display: none !important; /* Always hidden on desktop */
+  }
+}
+
+/* Tab Image (Mobile) */
+.service-tab-image {
+  width: 100%;
+  aspect-ratio: 328 / 357;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: var(--color-light-gray);
+}
+
+.service-tab-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Tab Description (Mobile) */
+.service-tab-description {
+  font-family: var(--font-primary);
+  font-size: 15px;
+  font-weight: var(--font-weight-regular);
+  line-height: normal;
+  color: var(--color-black-80);
+  margin: 0;
+}
+
+/* Tab Button (Mobile) */
+.service-tab-btn {
+  width: 100%;
+  padding: 16px 32px;
+}
+
+/* Desktop Preview (Hidden on Mobile) */
+.services-preview {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .services-preview {
+    display: flex;
+    gap: 40px;
+    flex: 1;
+  }
+}
+
+/* Preview Image */
+.services-preview-image {
+  width: 404px;
+  height: 440px;
+  border-radius: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.services-preview-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+/* Preview Content */
+.services-preview-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 418px;
+  height: 440px;
+}
+
+/* Preview Text */
+.services-preview-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.services-preview-title {
+  font-family: var(--font-primary);
+  font-size: 32px;
+  font-weight: var(--font-weight-semibold);
+  line-height: normal;
+  color: var(--color-black-100);
+  margin: 0;
+  transition: opacity 0.3s ease;
+}
+
+.services-preview-description {
+  font-family: var(--font-primary);
+  font-size: 18px;
+  font-weight: var(--font-weight-medium);
+  line-height: normal;
+  color: var(--color-black-60);
+  margin: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Preview Button (Round) */
+.services-preview-btn {
+  width: 140px;
+  height: 140px;
+  border-radius: 100px;
+  background-color: var(--color-black-100);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--font-primary);
+  font-size: 15px;
+  font-weight: var(--font-weight-bold);
+  line-height: 1.2;
+  text-decoration: none;
+  transition: transform var(--transition-fast), background-color var(--transition-fast);
+}
+
+.services-preview-btn:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,281 @@
+/**
+ * Cta Styles
+ * Auto-generated from styles.css
+ */
+
+/* ========================================
+   CTA SECTION
+   ======================================== */
+
+.cta-section {
+  background-color: var(--color-black-100);
+  border-radius: 30px;
+  padding: 25px 20px;
+  margin: 40px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+@media (min-width: 1024px) {
+  .cta-section {
+    border-radius: 60px;
+    padding: 50px;
+    margin: 60px 140px;
+    position: relative;
+    min-height: 456px;
+  }
+}
+
+/* CTA Heading */
+.cta-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 1024px) {
+  .cta-heading {
+    gap: 15px;
+    width: 478px;
+  }
+}
+
+.cta-title {
+  font-family: var(--font-primary);
+  font-size: 28px;
+  font-weight: var(--font-weight-bold);
+  line-height: 100%;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+@media (min-width: 1024px) {
+  .cta-title {
+    font-size: 50px;
+    font-weight: var(--font-weight-semibold);
+    line-height: 55px;
+  }
+}
+
+.cta-description {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: var(--font-weight-regular);
+  line-height: 100%;
+  color: #FFFFFF;
+  opacity: 0.8;
+  margin: 0;
+}
+
+@media (min-width: 1024px) {
+  .cta-description {
+    font-size: 18px;
+    font-weight: var(--font-weight-medium);
+    width: 334px;
+  }
+}
+
+/* CTA Image (Desktop only) */
+.cta-image {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .cta-image {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: auto;
+    max-height: 100%;
+  }
+  
+  .cta-image img {
+    width: auto;
+    height: 400px;
+    object-fit: contain;
+  }
+}
+
+/* CTA Form */
+.cta-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (min-width: 1024px) {
+  .cta-form {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 315px;
+    gap: 20px;
+  }
+}
+
+.cta-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* CTA Input */
+.cta-input-group {
+  width: 100%;
+}
+
+.cta-input {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 16px 15px;
+  font-family: var(--font-primary);
+  font-size: 15px;
+  font-weight: var(--font-weight-regular);
+  line-height: normal;
+  color: #FFFFFF;
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.cta-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.cta-input:focus {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* CTA Dropdown */
+.cta-dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.cta-dropdown-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 16px 15px;
+  font-family: var(--font-primary);
+  font-size: 15px;
+  font-weight: var(--font-weight-regular);
+  line-height: normal;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: border-color var(--transition-fast);
+  text-align: left;
+}
+
+.cta-dropdown-trigger:focus {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.cta-dropdown.selected .cta-dropdown-trigger {
+  color: #FFFFFF;
+}
+
+.cta-dropdown-arrow {
+  width: 10px;
+  height: 6px;
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+
+.cta-dropdown.open .cta-dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.cta-dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 4px;
+  background-color: var(--color-black-80);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all var(--transition-fast);
+  z-index: 100;
+}
+
+.cta-dropdown.open .cta-dropdown-list {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.cta-dropdown-item {
+  padding: 14px 15px;
+  font-family: var(--font-primary);
+  font-size: 15px;
+  font-weight: var(--font-weight-regular);
+  line-height: normal;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.cta-dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cta-dropdown-item.selected {
+  color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* CTA Form Footer */
+.cta-form-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cta-submit {
+  width: 100%;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 32px;
+  font-family: var(--font-primary);
+  font-size: 15px;
+  font-weight: var(--font-weight-bold);
+  line-height: normal;
+  color: var(--color-black-100);
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.cta-submit:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-agreement {
+  font-family: var(--font-primary);
+  font-size: 13px;
+  font-weight: var(--font-weight-medium);
+  line-height: normal;
+  color: #FFFFFF;
+  opacity: 0.6;
+  margin: 0;
+  text-align: center;
+}
+
+.cta-agreement a {
+  color: inherit;
+  text-decoration: underline;
+}

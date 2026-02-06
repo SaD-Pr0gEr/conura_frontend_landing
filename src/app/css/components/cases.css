@@ -1,0 +1,298 @@
+/**
+ * Cases Styles
+ * Auto-generated from styles.css
+ */
+
+/* ========================================
+   CASES SECTION
+   ======================================== */
+
+.cases-section {
+  padding: 40px 16px;
+}
+
+@media (min-width: 1024px) {
+  .cases-section {
+    padding: 60px 140px;
+  }
+}
+
+.cases-title {
+  font-family: var(--font-primary);
+  font-size: 34px;
+  font-weight: var(--font-weight-semibold);
+  line-height: 37px;
+  color: var(--color-black-100);
+  margin: 0 0 20px 0;
+}
+
+@media (min-width: 1024px) {
+  .cases-title {
+    font-size: 55px;
+    line-height: 60px;
+    margin-bottom: 30px;
+  }
+}
+
+/* Cases Content */
+.cases-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 1024px) {
+  .cases-content {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+/* Cases Main (Left side on desktop) */
+.cases-main {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .cases-main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-shrink: 0;
+  }
+}
+
+/* Cases Side (Mobile: all cards, Desktop: right side mini cards) */
+.cases-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 1024px) {
+  .cases-side {
+    gap: 15px;
+    flex: 1;
+  }
+}
+
+/* Case Card Base */
+.case-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.case-card-image {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 328 / 212;
+}
+
+.case-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.case-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.case-card-title {
+  font-family: var(--font-primary);
+  font-size: 20px;
+  font-weight: var(--font-weight-medium);
+  line-height: normal;
+  color: var(--color-black-100);
+  margin: 0;
+}
+
+.case-card-subtitle {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: var(--font-weight-regular);
+  line-height: normal;
+  color: var(--color-black-60);
+  margin: 0;
+}
+
+/* Case Card Main (Large - Desktop) */
+@media (min-width: 1024px) {
+  .case-card-main {
+    width: 650px;
+  }
+  
+  .case-card-main .case-card-image {
+    aspect-ratio: 650 / 420;
+    border-radius: 28px;
+    height: 420px;
+  }
+  
+  .case-card-main .case-card-info {
+    gap: 5px;
+  }
+  
+  .case-card-main .case-card-title {
+    font-size: 28px;
+    font-weight: var(--font-weight-semibold);
+  }
+  
+  .case-card-main .case-card-subtitle {
+    font-size: 18px;
+    font-weight: var(--font-weight-medium);
+  }
+}
+
+/* Case Card Mini (Desktop) */
+@media (min-width: 1024px) {
+  .case-card-mini {
+    flex-direction: row;
+    gap: 25px;
+    align-items: flex-start;
+  }
+  
+  .case-card-mini .case-card-image {
+    width: 315px;
+    height: 220px;
+    aspect-ratio: 315 / 220;
+    border-radius: 24px;
+    flex-shrink: 0;
+  }
+  
+  .case-card-mini .case-card-info {
+    flex: 1;
+    gap: 5px;
+    padding-top: 5px;
+  }
+  
+  .case-card-mini .case-card-title {
+    font-size: 28px;
+    font-weight: var(--font-weight-semibold);
+  }
+  
+  .case-card-mini .case-card-subtitle {
+    font-size: 18px;
+    font-weight: var(--font-weight-medium);
+  }
+}
+
+/* Desktop only card */
+.case-card-desktop-only {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .case-card-desktop-only {
+    display: flex;
+  }
+}
+
+/* Mobile only card */
+.case-card-mobile-only {
+  display: flex;
+}
+
+@media (min-width: 1024px) {
+  .case-card-mobile-only {
+    display: none;
+  }
+}
+
+/* Title/Subtitle variants for mobile/desktop */
+.case-title-desktop,
+.case-subtitle-desktop {
+  display: none;
+}
+
+.case-title-mobile,
+.case-subtitle-mobile {
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .case-title-desktop,
+  .case-subtitle-desktop {
+    display: block;
+  }
+  
+  .case-title-mobile,
+  .case-subtitle-mobile {
+    display: none;
+  }
+}
+
+/* Round Buttons */
+.btn-round {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 160px;
+  border-radius: 100px;
+  font-family: var(--font-primary);
+  font-size: 15px;
+  font-weight: var(--font-weight-bold);
+  line-height: normal;
+  text-align: center;
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+}
+
+@media (min-width: 1024px) {
+  .btn-round {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+.btn-round-filled {
+  background-color: var(--color-black-100);
+  color: #FFFFFF;
+}
+
+.btn-round-filled:hover {
+  background-color: var(--color-black-80);
+}
+
+.btn-round-outline {
+  background-color: transparent;
+  color: var(--color-black-100);
+  border: 1px solid var(--color-black-100);
+}
+
+.btn-round-outline:hover {
+  background-color: var(--color-light-gray);
+}
+
+/* Cases Buttons (Desktop) */
+.cases-buttons {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .cases-buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+}
+
+/* Cases Buttons (Mobile) */
+.cases-buttons-mobile {
+  display: flex;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+@media (min-width: 1024px) {
+  .cases-buttons-mobile {
+    display: none;
+  }
+}
