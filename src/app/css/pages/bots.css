@@ -43,20 +43,6 @@
     height: 100%;
 }
 
-.banner-slide {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
-}
-
-.banner-slide.active {
-    opacity: 1;
-    visibility: visible;
-}
-
 .banner-slide-image {
     position: absolute;
     top: 0;
@@ -263,15 +249,6 @@
 
 .banner-pagination-item.active .banner-pagination-progress {
     animation: banner-progress 4s linear forwards;
-}
-
-@keyframes banner-progress {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 100%;
-    }
 }
 
 /* Arrows */
