@@ -8,188 +8,157 @@
    ======================================== */
 
 .certificate-section {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding: 20px var(--container-mobile-padding) 0;
-}
-
-@media (min-width: 1024px) {
-  .certificate-section {
     position: relative;
-    padding: 0;
-    min-height: 900px;
-    overflow: hidden;
-    margin-top: 0;
-  }
+    padding: 0 140px 60px;
 }
 
 /* Desktop Header: Title + IT Park Logo */
-.certificate-header {
-  display: none;
-}
-
-@media (min-width: 1024px) {
-  .certificate-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    top: 40px;
-    left: 144px;
-    width: 1320px;
-    z-index: 10;
-  }
-}
 
 .certificate-heading {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 670px;
-  font-family: var(--font-primary);
-  font-weight: var(--font-weight-semibold);
-  font-size: 60px;
-  line-height: 65px;
+    position: absolute;
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-semibold);
+    font-size: 60px;
+    line-height: 65px;
 }
 
 .certificate-heading-accent {
-  color: var(--color-accent-sea);
-  text-align: right;
-  width: 100%;
+    color: var(--color-accent-sea);
+    text-align: right;
+}
+
+.certificate-header {
+    position: relative;
+    z-index: 2;
 }
 
 .certificate-heading-text {
-  color: var(--color-black-100);
-  text-align: left;
-  width: 100%;
+    color: var(--color-black-100);
+    text-align: left;
 }
 
 .certificate-logo-desktop {
-  width: 110px;
-  height: 97px;
-  object-fit: contain;
+    object-fit: contain;
+    right: 75px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
 }
 
 /* Scene Image */
 .certificate-scene {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  border-radius: 28px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 28px;
 }
 
-@media (min-width: 1024px) {
-  .certificate-scene {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
+.certificate-scene img:first-child {
+    margin-top: 85px;
+    z-index: 2;
+}
+
+.certificate-scene img:last-child {
+    margin-top: -55px;
     z-index: 1;
-  }
+}
+
+.certificate-scene img {
+    margin: 0 auto;
 }
 
 .certificate-scene-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.3s ease-out;
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-out;
 }
 
 @media (min-width: 1024px) {
-  .certificate-scene-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 55%;
-  }
+    .certificate-scene-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 55%;
+    }
 }
 
 /* Parallax effect */
 .certificate-scene.parallax .certificate-scene-img {
-  transform: translateY(var(--parallax-y, 0));
+    transform: translateY(var(--parallax-y, 0));
 }
 
 /* Mobile Content */
 .certificate-content-mobile {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
 }
 
 @media (min-width: 1024px) {
-  .certificate-content-mobile {
-    display: none;
-  }
+    .certificate-content-mobile {
+        display: none;
+    }
 }
 
 .certificate-text {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .certificate-title {
-  font-family: var(--font-primary);
-  font-size: 34px;
-  font-weight: var(--font-weight-semibold);
-  line-height: 37px;
-  color: var(--color-black-100);
-  margin: 0;
+    font-family: var(--font-primary);
+    font-size: 34px;
+    font-weight: var(--font-weight-semibold);
+    line-height: 37px;
+    color: var(--color-black-100);
+    margin: 0;
 }
 
 .text-accent {
-  color: var(--color-accent-sea);
+    color: var(--color-accent-sea);
 }
 
 .certificate-description {
-  font-family: var(--font-primary);
-  font-size: 15px;
-  font-weight: var(--font-weight-regular);
-  line-height: normal;
-  color: var(--color-black-80);
-  margin: 0;
+    font-family: var(--font-primary);
+    font-size: 15px;
+    font-weight: var(--font-weight-regular);
+    line-height: normal;
+    color: var(--color-black-80);
+    margin: 0;
 }
 
 /* Mobile Button */
 .certificate-btn-mobile {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  width: 100%;
-  height: 50px;
-  padding: 16px 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: 50px;
+    padding: 16px 32px;
 }
 
 .certificate-btn-icon {
-  width: 23px;
-  height: 20px;
-  object-fit: contain;
+    width: 23px;
+    height: 20px;
+    object-fit: contain;
 }
 
 .certificate-btn-mobile:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 /* Desktop Round Button */
 .certificate-btn-round {
-  display: none;
-}
-
-@media (min-width: 1024px) {
-  .certificate-btn-round {
     display: flex;
+    position: absolute;
+    left: 400px;
+    bottom: 300px; /* Position from bottom */
     align-items: center;
     justify-content: center;
-    position: absolute;
-    left: 313px;
-    bottom: 200px; /* Position from bottom */
     width: 140px;
     height: 140px;
     border-radius: 100px;
@@ -204,18 +173,13 @@
     cursor: pointer;
     z-index: 10;
     transition: transform 0.2s ease, background-color 0.2s ease;
-  }
-  
-  .certificate-btn-round:hover {
-    transform: scale(1.05);
-  }
-  
-  .certificate-btn-round:disabled {
+}
+
+.certificate-btn-round:disabled {
     opacity: 0.6;
     cursor: not-allowed;
-  }
-  
-  .certificate-btn-round:disabled:hover {
+}
+
+.certificate-btn-round:disabled:hover {
     transform: none;
-  }
 }

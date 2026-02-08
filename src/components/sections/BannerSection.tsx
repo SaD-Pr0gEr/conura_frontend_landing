@@ -73,7 +73,7 @@ export function BannerSection() {
                                  alt="a logo fragment"/>
                             <img className="it-logo-fragment scalable-img" src="/images/it-park-logo.svg"
                                  alt="it park logo"/>
-                            <img className="human-ufo-fragment scalable-img" src="/images/human-and-ufo.png"
+                            <img className="human-ufo-fragment" src="/images/human-and-ufo.png"
                                  alt="human and ufo fragment"/>
                         </div>
                         <div className="banner-content">
@@ -87,10 +87,10 @@ export function BannerSection() {
                     >
                         <div className="banner-img">
                             <img className="left-stars-top" src="/images/home/stars.png" alt="stars"/>
-                            <img className="center-cloud scalable-img" src="/images/home/clouds.svg" alt="clouds"/>
+                            <img className="center-cloud" src="/images/home/clouds.svg" alt="clouds"/>
                             <img className="ufo-robot scalable-img" src="/images/home/robot.png" alt="robot"/>
                             <img className="cosmo" src="/images/home/cosmo.png" alt="cosmo"/>
-                            <img className="comet scalable-img" src="/images/home/comet.svg" alt="comet"/>
+                            <img className="comet" src="/images/home/comet.svg" alt="comet"/>
                             <img className="web scalable-img" src="/images/home/web.png" alt="web"/>
                         </div>
                         <div className="banner-content">
@@ -103,11 +103,11 @@ export function BannerSection() {
                     >
                         <div className="banner-img">
                             <img className="banner_3_left_top" src="/images/home/banner_3_left_top.svg" alt="banner 3 left top"/>
-                            <img className="banner_3_a_logo" src="/images/a-logo.svg" alt="banner 3 a logo"/>
-                            <img className="banner_3_analytics" src="/images/home/analytics.svg" alt="banner 3 analytics"/>
+                            <img className="banner_3_a_logo scalable-img" src="/images/a-logo.svg" alt="banner 3 a logo"/>
+                            <img className="banner_3_analytics scalable-img" src="/images/home/analytics.svg" alt="banner 3 analytics"/>
                             <img className="banner_3_ufoman" src="/images/home/light-ufoman.png" alt="banner 3 ufoman"/>
-                            <img className="banner_3_yellow_arrow" src="/images/yellow-arrow-logo.svg" alt="banner 3 yellow arrow"/>
-                            <img className="banner_3_square" src="/images/home/square.svg" alt="banner 3 square"/>
+                            <img className="banner_3_yellow_arrow scalable-img" src="/images/yellow-arrow-logo.svg" alt="banner 3 yellow arrow"/>
+                            <img className="banner_3_square scalable-img" src="/images/home/square.svg" alt="banner 3 square"/>
                         </div>
                         <div className="banner-content">
                             <h1 className="banner-title">{slides[2].title}</h1>

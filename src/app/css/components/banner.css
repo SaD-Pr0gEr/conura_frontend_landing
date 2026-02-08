@@ -139,9 +139,14 @@
     background-color: var(--light-bg-color);
 }
 
-.banner-img .scalable-img:hover {
-    transform: scale(1.2);
+.scalable-img:hover {
+    transform: scale(1.1);
     transition: all .6s ease;
+}
+
+.scalable-img:active {
+    transform: scale(.9);
+    transition: all .4s ease;
 }
 
 .banner-1 .banner-img .lightning-fragment {
@@ -237,30 +242,35 @@
     position: absolute;
     width: 230px;
     height: 230px;
+    z-index: 2;
 }
 
 .banner-3 .banner_3_analytics {
     position: absolute;
     right: 525px;
     bottom: 0;
+    z-index: 2;
 }
 
 .banner-3 .banner_3_ufoman {
     position: absolute;
     bottom: 0;
     right: 20px;
+    z-index: 1;
 }
 
 .banner-3 .banner_3_yellow_arrow {
     position: absolute;
     top: 50px;
     right: 30px;
+    z-index: 2;
 }
 
 .banner-3 .banner_3_square {
     position: absolute;
     bottom: 125px;
     right: 10px;
+    z-index: 2;
 }
 
 /* Service page banner slide content */
