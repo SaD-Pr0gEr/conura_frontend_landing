@@ -33,19 +33,19 @@ export function Footer() {
                 <div className="footer-logo-wrapper">
                     <span className="footer-logo-text">C</span>
                     <span className="footer-logo-o">
-            <span className="footer-logo-o-text">O</span>
-            <img
-                src="https://www.figma.com/api/mcp/asset/e6387e44-3cb6-4e4c-8d78-b10403ca61ff"
-                alt=""
-                className="footer-logo-alien"
-                loading="lazy"
-            />
-          </span>
+                    <span className="footer-logo-o-text">O</span>
+                        <img
+                            src="/images/ufoman_form_smile.png"
+                            alt=""
+                            className="footer-logo-alien"
+                            loading="lazy"
+                        />
+                    </span>
                     <span className="footer-logo-text">NURA</span>
                 </div>
 
                 <div className="footer-copyright">
-                    <p className="footer-copyright-text">© 2023 OOO "CODEREVIEW"</p>
+                    <p className="footer-copyright-text">© 2023 OOO &#34;CODEREVIEW&#34;</p>
                     <Link href="/privacy" className="footer-copyright-link">Политика конфиденциальности</Link>
                 </div>
             </div>

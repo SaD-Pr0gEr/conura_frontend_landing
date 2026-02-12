@@ -273,6 +273,118 @@
     z-index: 2;
 }
 
+.banner-4 {
+    background-color: #FF6A3D;
+}
+
+.banner-4 .left-top-fragment {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.banner-4 .google_search {
+    position: absolute;
+    top: -75px;
+    right: 400px;
+}
+
+.banner-4 .ufoman_megafon {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
+
+.banner-4 .yellow_arrow_logo {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 2;
+}
+
+.banner-4 .green_triangle {
+    position: absolute;
+    bottom: 75px;
+    right: 75px;
+}
+
+.banner-4 .a_logo {
+    position: absolute;
+    right: 500px;
+    bottom: 25px;
+    width: 250px;
+}
+
+.banner-5 {
+    background-color: #5D6BFF;
+}
+
+.banner-5 .top_left_5_fragment {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+.banner-5 .banner_5_left_top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+.banner-5 .cosmo-man {
+    position: absolute;
+    bottom: 0;
+    right: 75px;
+    z-index: 2;
+}
+
+.banner-5 .banner_5_square {
+    position: absolute;
+    right: 600px;
+    top: 100px;
+    z-index: 3;
+}
+
+.banner-5 .banner_5_screw {
+    position: absolute;
+    bottom: -50px;
+    right: 75px;
+    z-index: 3;
+}
+
+.banner-6 {
+    background-color: black;
+}
+
+.banner-6 .banner_3_left_top {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.banner-6 .ufoman_cosmo_man_pc {
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+    z-index: 1;
+}
+
+.banner-6 .dots_9 {
+    position: absolute;
+    right: 225px;
+    top: 0;
+    z-index: 2;
+}
+
+.banner-6 .eight_logo {
+    position: absolute;
+    top: 125px;
+    right: 725px;
+    z-index: 2;
+}
+
 /* Service page banner slide content */
 .banner-slide-content {
     position: absolute;
