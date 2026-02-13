@@ -14,17 +14,12 @@
     overflow: hidden;
 }
 
-@media (min-width: 1024px) {
-    .what-is-section {
-        padding: 120px 140px;
-    }
-}
-
 .what-is-container {
     position: relative;
     display: flex;
     flex-direction: column;
     gap: 0;
+    padding: 120px 140px;
 }
 
 /* Icons */
@@ -82,39 +77,27 @@
 }
 
 .what-is-title-orange {
-    color: var(--color-primary);
+    color: #FF6A3D;
     display: block;
     margin-bottom: 4px;
 }
 
-@media (min-width: 1024px) {
-    .what-is-title-orange {
-        display: inline;
-        margin-bottom: 0;
-    }
-
-    .what-is-title-orange::before {
-        content: '';
-        display: inline-block;
-        width: 84px;
-        height: 28px;
-        background-image: url('/images/what-is-icon-bars.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        vertical-align: middle;
-        margin-right: 25px;
-    }
+.what-is-title-orange::before {
+    content: '';
+    display: inline-block;
+    width: 84px;
+    height: 28px;
+    background-image: url('/images/what-is-icon-bars.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 25px;
 }
 
 .what-is-title-black {
     color: var(--color-black-100);
     display: block;
-}
-
-@media (min-width: 1024px) {
-    .what-is-title-black {
-        display: inline;
-    }
+    text-align: left;
 }
 
 .what-is-title-alien {
@@ -153,32 +136,44 @@
 }
 
 /* Decoration (magnifying glass) */
-.what-is-decoration {
-    position: absolute;
-    bottom: -20px;
-    right: -20px;
-    width: 180px;
-    height: 160px;
-    overflow: visible;
-    pointer-events: none;
-}
-
-@media (min-width: 1024px) {
-    .what-is-decoration {
-        bottom: -20px;
-        right: 80px;
-        width: 250px;
-        height: 220px;
-    }
-}
-
 .what-is-decoration-img {
-    width: 100%;
-    height: 100%;
+    position: absolute;
     object-fit: contain;
     object-position: center;
+    bottom: 0;
+    right: 150px;
 }
 
+.service-cta-section {
+    position: relative;
+    padding: 140px;
+}
+
+.service-cta-section .service-cta-content .service-cta-title .service-cta-orange {
+    color: #FF6A3D;
+}
+
+.service-cta-section .service-cta-content .service-cta-title {
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+
+.service-cta-section .service-cta-character-left {
+    right: 200px;
+    top: 20px;
+    position: absolute;
+}
+
+.service-cta-section .service-cta-character-right {
+    position: absolute;
+    bottom: 50px;
+}
+
+.service-cta-section .service-cta-content {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
 
 /* ========================================
    PLATFORMS SECTION
@@ -1130,16 +1125,8 @@
 }
 
 .tools-card-icon {
-    width: 35px;
-    height: 35px;
+    width: 50px;
     object-fit: contain;
-}
-
-@media (min-width: 1024px) {
-    .tools-card-icon {
-        width: 46px;
-        height: 46px;
-    }
 }
 
 .tools-card-content {
@@ -1273,6 +1260,7 @@
     scrollbar-width: none;
     -ms-overflow-style: none;
     scroll-behavior: smooth;
+    justify-content: center;
 }
 
 .certification-slider-track::-webkit-scrollbar {
@@ -1284,7 +1272,6 @@
         gap: 20px;
         padding: 0;
         overflow-x: visible;
-        justify-content: flex-start;
     }
 }
 
@@ -1623,36 +1610,23 @@
    ======================================== */
 .cta-project-section {
     background-color: var(--color-black-100);
-    border-radius: 30px;
-    padding: 25px 20px;
-    margin: 40px 16px;
+    border-radius: 60px;
+    padding: 50px;
+    margin: 60px 140px;
+    min-height: 450px;
+    overflow: visible;
     position: relative;
-    overflow: hidden;
-}
-
-@media (min-width: 1024px) {
-    .cta-project-section {
-        border-radius: 60px;
-        padding: 50px;
-        margin: 60px 140px;
-        min-height: 450px;
-        overflow: visible;
-    }
 }
 
 .cta-project-container {
-    position: relative;
     display: flex;
-    flex-direction: column;
+    border-radius: 60px;
+    padding: 50px;
+    min-height: 450px;
+    overflow: visible;
     gap: 20px;
-}
-
-@media (min-width: 1024px) {
-    .cta-project-container {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .cta-project-heading {
@@ -1700,43 +1674,15 @@
     }
 }
 
-.cta-project-alien {
-    display: none;
-}
-
-@media (min-width: 1024px) {
-    .cta-project-alien {
-        display: block;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 269px;
-        height: 406px;
-        pointer-events: none;
-        z-index: 1;
-        overflow: visible;
-    }
-}
-
 .cta-project-alien-img {
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    width: 460px;
+    height: 460px;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
     object-fit: contain;
-    object-position: center bottom;
-}
-
-@media (min-width: 1024px) {
-    .cta-project-alien-img {
-        position: absolute;
-        width: 460px;
-        height: 460px;
-        left: 50%;
-        bottom: -30px;
-        transform: translateX(-50%);
-        object-fit: contain;
-        max-width: none;
-    }
+    max-width: none;
 }
 
 .cta-project-card {
@@ -1793,7 +1739,7 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
 }
 
 .cta-project-checklist-item {
@@ -1803,8 +1749,8 @@
 }
 
 .cta-project-check {
-    width: 8px;
-    height: 8px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background-color: #00B4D8;
     flex-shrink: 0;
@@ -1812,7 +1758,7 @@
 
 .cta-project-line {
     flex: 1;
-    height: 6px;
+    height: 10px;
     background-color: #3A3A3A;
     border-radius: 3px;
 }
