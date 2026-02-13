@@ -32,11 +32,11 @@ const BotsHowWeWorkSection = dynamic(
     {ssr: true}
 );
 const CasesSection = dynamic(
-    () => import('@/components/sections/CasesSection').then(mod => ({default: mod.CasesSection})),
+    () => import('@/components/sections/bots/BotsCasesSection').then(mod => ({default: mod.BotsCasesSection})),
     {ssr: true}
 );
 const CTASection = dynamic(
-    () => import('@/components/sections/CTASection').then(mod => ({default: mod.CTASection})),
+    () => import('@/components/sections/context/ContextCTAProjectSection').then(mod => ({default: mod.ContextCTAProjectSection})),
     {ssr: true}
 );
 
@@ -78,8 +78,8 @@ export default function BotsPage() {
                 <RunningLineSection/>
                 <BotsWhySection/>
                 <BotsTechSection/>
-                <BotsSecuritySection/>
                 <BotsIntegrationsSection/>
+                <BotsSecuritySection/>
                 <BotsHowWeWorkSection/>
                 <CasesSection/>
                 <CTASection/>

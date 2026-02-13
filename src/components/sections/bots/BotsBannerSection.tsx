@@ -72,22 +72,22 @@ export function BotsBannerSection() {
                             <img className="clouds" src="/images/home/clouds.svg" alt="clouds"/>
                             <img className="robot" src="/images/bots/robot.png" alt="robot"/>
                             <img className="signal" src="/images/bots/signal.svg" alt="signal"/>
-                            <div className="chat-bot-message-container">
+                            <div className="chat-bot-message-container scalable-img">
                                 <div className="chat-bot-message">
                                     <p className="message-head">Чат-бот</p>
                                     <p className="message">Здравствуйте!</p>
                                     <p className="message">Чем могу помочь?</p>
                                 </div>
                             </div>
-                            <div className="client-message-1">
+                            <div className="client-message-1 scalable-img">
                                 <p className="message-head">Клиент</p>
                                 <p className="message">Как быстро доставите?</p>
                             </div>
-                            <div className="client-message-2">
+                            <div className="client-message-2 scalable-img">
                                 <p className="message-head">Клиент</p>
                                 <p className="message">Сколько стоит услуга?</p>
                             </div>
-                            <div className="client-message-3">
+                            <div className="client-message-3 scalable-img">
                                 <p className="message-head">Клиент</p>
                                 <p className="message">Есть вопрос</p>
                                 <p className="message">по вашему продукту</p>
@@ -109,7 +109,7 @@ export function BotsBannerSection() {
                     >
                         <div className="banner-img">
                             <img src="/images/bots/qr-code.png" alt="qr code" className="qr-code"/>
-                            <img src="/images/bots/shop_arrow.svg" alt="shop arrow" className="shop-arrow"/>
+                            <img src="/images/bots/shop_arrow.svg" alt="shop arrow" className="shop-arrow scalable-img"/>
                             <img src="/images/bots/robot-2.png" alt="robot 2" className="robot-2"/>
                             <img src="/images/bots/box.png" alt="box" className="box"/>
                         </div>
@@ -131,10 +131,10 @@ export function BotsBannerSection() {
                         <div className="banner-img">
                             <img src="/images/bots/arrows_3.png" alt="arrows 3" className="arrows_3"/>
                             <img src="/images/bots/robot_cosmo_man.png" alt="robot cosmo man" className="robot_cosmo_man"/>
-                            <img src="/images/bots/tg_3d_icon.svg" alt="tg 3d icon" className="tg-icon"/>
+                            <img src="/images/bots/tg_3d_icon.svg" alt="tg 3d icon" className="tg-icon scalable-img"/>
                             <img src="/images/bots/whatsapp_3d_icon.svg" alt="whatsapp 3d icon"
-                                 className="whatsapp_3d_icon"/>
-                            <img src="/images/bots/excel_3d_icon.svg" alt="excel 3d icon" className="excel-3d-icon"/>
+                                 className="whatsapp_3d_icon scalable-img"/>
+                            <img src="/images/bots/excel_3d_icon.svg" alt="excel 3d icon" className="excel-3d-icon scalable-img"/>
                         </div>
                         <div className="banner-slide-content">
                             <h1 className="banner-slide-title">{slides[2].title}</h1>

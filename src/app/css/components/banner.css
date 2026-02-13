@@ -470,6 +470,7 @@
     padding: 15px;
     backdrop-filter: blur(5px);
     opacity: .8;
+    z-index: 3;
 }
 
 .banner-8 {

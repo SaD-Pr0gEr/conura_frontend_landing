@@ -6,8 +6,8 @@ interface RunningLineSectionProps {
 }
 
 export function RunningLineSection({
-  whiteLogoUrl = 'https://www.figma.com/api/mcp/asset/988bc586-d55d-451a-9c0c-143d0c064c95',
-  greenLogoUrl = 'https://www.figma.com/api/mcp/asset/839c21b6-6366-4260-be65-b733eda30baa',
+  whiteLogoUrl = '/images/it-park-flat.svg',
+  greenLogoUrl = '/images/it-park-flat-white.svg',
 }: RunningLineSectionProps) {
   const text = 'РЕЗИДЕНТ IT PARK UZBEKISTAN';
   const repeatCount = 5;

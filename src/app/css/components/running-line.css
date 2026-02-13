@@ -23,8 +23,7 @@
 
 .running-line {
   position: absolute;
-  left: -30%;
-  width: 160%;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -96,6 +95,12 @@
   gap: 16px;
   padding: 12px 0;
   flex-shrink: 0;
+}
+
+.running-line-content > span {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
 @media (min-width: 1024px) {
